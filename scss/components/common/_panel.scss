@@ -1,0 +1,71 @@
+// Panel
+.panel{
+	overflow: hidden;
+	height: 100vh;
+	background: #494949;
+	position: relative;
+	z-index: 1000;
+
+	.panel-inner{
+		padding: 20px 0;
+		height: 100vh;
+		overflow-y: auto;
+		overflow-x: hidden !important;
+	}
+
+	.panel-nav{
+		list-style: none;
+		width: 100%;
+		padding: 0 15px;
+		margin-bottom: 15px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		li{
+			a{
+				font-size: 14px;
+				line-height: 28px;
+				font-weight: bold;
+				color: #fff;
+				text-transform: uppercase;
+
+				&:hover{
+					color: $primary;
+				}
+			}
+
+			&.current-menu-item,
+			&.current-menu-parent{
+				a{
+					color: $primary;
+				}
+			}
+
+			&.current-menu-item{
+				a{
+					cursor: default;
+				}
+			}
+		}
+	}
+
+	.panel-content{
+		padding: 0 15px;
+
+		a:not(.phone-link){
+			font-size: 14px;
+			line-height: 20px;
+			color: $text-light;
+			margin-top: 5px;
+			margin-bottom: 10px;
+			display: inline-block;
+			font-family: $second-font;
+		}
+	}
+
+	&[style*="right: 0px"]{
+		box-shadow: 0 0 1px rgba(#fff, .1);
+	}
+}

@@ -1,0 +1,46 @@
+.logo-block{
+	color: $text-light;
+	font-family: $second-font;
+	transition: all $t;
+	display: block;
+
+	.block-image{
+		margin-bottom: 5px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.block-text{
+		font-size: 14px;
+		line-height: 1;
+		letter-spacing: 0.05em;
+		transition: all $t;
+	}
+
+	&:hover{
+		opacity: .8;
+
+		.block-text{
+			color: $primary;
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		.block-text{
+			font-size: 13px;
+			letter-spacing: -0.05em;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		max-width: 205px;
+	}
+}

@@ -1,0 +1,265 @@
+.slider-default-paddings{
+	width: calc(100% + 30px);
+	margin: -20px -15px;
+
+	.slide{
+		padding: 20px 15px;
+	}
+}
+
+.slide{
+	outline: none !important;
+}
+
+.slick-arrow{
+	width: 48px;
+	height: 48px;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all $t;
+	position: absolute;
+	z-index: 20;
+	border-radius: 50%;
+	border: 1px solid #dedede;
+
+	&:hover{
+		opacity: 1;
+		border-color: $primary;
+	}
+
+	&:before{
+		content: '';
+		width: 12px;
+		height: 17px;
+		background: url(../img/icons/slider-arrows.png) no-repeat;
+		opacity: 1;
+	}
+
+	&.slick-prev{
+		left: -105px;
+
+		&:before{
+			background-position: 0 0;
+		}
+	}
+
+	&.slick-next{
+		right: -105px;
+
+		&:before{
+			background-position: -12px 0;
+		}
+	}
+
+	@media screen and (max-width: 1440px){
+		&.slick-prev{
+			left: -70px;
+		}
+
+		&.slick-next{
+			right: -70px;
+		}
+	}
+}
+
+.slider-white-arrows .slick-arrow{
+	border: 1px solid #fff;
+
+	&:before{
+		background: url(../img/icons/slider-arrows-white.png) no-repeat;
+	}
+
+	&.slick-prev{
+		&:before{
+			background-position: 0 0;
+		}
+	}
+
+	&.slick-next{
+		&:before{
+			background-position: -12px 0;
+		}
+	}
+
+	&:hover{
+		opacity: .8;
+	}
+}
+
+.slick-slider.slick-dotted{
+	margin-bottom: 60px;
+
+	.slick-dots{
+		bottom: -60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 20;
+
+		li{
+			width: 12px;
+			height: 12px;
+			margin: 0;
+
+			button{
+				width: 12px;
+				height: 12px;
+				padding: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				&:before{
+					position: static;
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					content: '';
+					opacity: 1;
+					background: #101010;
+					transition: all $t;
+				}
+			}
+
+			&.slick-active{
+				button{
+					&:before{
+						background: $primary;
+					}
+				}
+			}
+		}
+	}
+}
+
+.dots-with-arrows{
+	.slick-dots{
+		li{
+			&:first-child,
+			&:last-child{
+				&:before{
+					content: '';
+					display: block;
+					width: 85px;
+					height: 1px;
+					background: #dedede;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+
+				&:after{
+					content: '';
+					display: block;
+					width: 7px;
+					height: 14px;
+					background: url(../img/icons/small-arrows.png) no-repeat;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+
+			&:first-child{
+				&:before{
+					right: calc(100% + 65px);
+				}
+
+				&:after{
+					background-position: right center;
+					right: calc(100% + 65px + 85px + 13px);
+				}
+			}
+
+			&:last-child{
+				&:before{
+					left: calc(100% + 65px);
+				}
+
+				&:after{
+					background-position: left center;
+					left: calc(100% + 65px + 85px + 13px);
+				}
+			}
+
+			@media screen and (max-width: 575px){
+				&:first-child,
+				&:last-child{
+					&:before{
+						width: 25px;
+					}
+				}
+
+				&:first-child{
+					&:before{
+						right: calc(100% + 5px);
+					}
+
+					&:after{
+						right: calc(100% - 55px + 85px + 13px);
+					}
+				}
+
+				&:last-child{
+					&:before{
+						left: calc(100% + 5px);
+					}
+
+					&:after{
+						left: calc(100% - 55px + 85px + 13px);
+					}
+				}
+			}
+		}
+	}
+}
+
+.slick-slider.with-arrows{
+	@media	screen and (min-width: 1200px) and (max-width: 1350px),
+			screen and (min-width: 992px) and (max-width: 1042px),
+			screen and (min-width: 768px) and (max-width: 918px),
+			screen and (min-width: 576px) and (max-width: 726px){
+		width: calc(100% - 140px);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media screen and (max-width: 575px){
+		&:not(.slider-default-paddings){
+			width: calc(100% - 30px);
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.slick-arrow{
+			width: 15px;
+			border: 0;
+
+			&.slick-prev{
+				left: -24px;
+			}
+
+			&.slick-next{
+				right: -24px;
+			}
+		}
+
+		&.slider-default-paddings{
+			width: calc(100% + 14px);
+			margin-left: -7px;
+			margin-right: -7px;
+
+			.slick-arrow{
+				&.slick-prev{
+					left: -5px;
+				}
+
+				&.slick-next{
+					right: -5px;
+				}
+			}
+		}
+	}
+}

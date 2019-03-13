@@ -1,0 +1,39 @@
+.info-block{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	font-family: $second-font;
+
+	.block-icon{
+		flex: none;
+		margin-right: 25px;
+		width: 60px;
+
+		i{
+			display: block;
+		}
+	}
+
+	.block-content{
+		width: calc(100% - 60px - 25px);
+
+		p{
+			font-size: 16px;
+			line-height: 1.5;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		flex-direction: column;
+		align-items: stretch;
+
+		.block-icon{
+			margin-right: 0;
+			margin-bottom: 25px;
+		}
+
+		.block-content{
+			width: 100%;
+		}
+	}
+}

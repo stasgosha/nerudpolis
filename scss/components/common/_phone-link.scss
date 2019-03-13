@@ -1,0 +1,61 @@
+.phone-link{
+	font-size: 18px;
+	line-height: 28px;
+	color: $primary;
+	font-weight: bold;
+	font-family: $main-font;
+	white-space: nowrap;
+
+	span{
+		font-size: 24px;
+		color: #fff;
+		transition: all $t;
+	}
+
+	&:hover{
+		span{
+			color: $primary;
+		}
+	}
+
+	&.dark{
+		span{
+			color: $text-dark;
+		}
+
+		&:hover{
+			span{
+				color: $primary;
+			}
+		}
+	}
+
+	&.big{
+		font-size: 60px;
+		line-height: 1;
+
+		span{
+			font-size: 60px;
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		&.big{
+			font-size: 50px;
+
+			span{
+				font-size: 50px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		&.big{
+			font-size: 30px;
+
+			span{
+				font-size: 30px;
+			}
+		}
+	}
+}

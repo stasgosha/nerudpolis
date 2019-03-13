@@ -1,0 +1,44 @@
+@import "components/fonts";
+@import "components/vars";
+@import "components/layout";
+@import "components/typography";
+@import "components/assist";
+@import "icons";
+
+// Header
+@import "components/header/header";
+@import "components/header/logo-block";
+@import "components/header/header-nav";
+@import "components/header/header-contacts-block";
+@import "components/header/top-nav";
+
+// Sections
+@import "components/sections/first-screen-section";
+@import "components/sections/sections";
+
+// Footer
+@import "components/footer/footer";
+@import "components/footer/footer-nav";
+
+// Common
+@import "components/common/buttons";
+@import "components/common/forms";
+@import "components/common/panel";
+@import "components/common/phone-link";
+@import "components/common/material-card";
+@import "components/common/features-list";
+@import "components/common/our-partners-list";
+@import "components/common/sliders";
+@import "components/common/review-card";
+@import "components/common/tabs";
+@import "components/common/video-component";
+@import "components/common/consultation-card";
+@import "components/common/clients-slider";
+@import "components/common/contacts-card";
+@import "components/common/menu-opener";
+@import "components/common/breadcrumbs";
+@import "components/common/tables";
+@import "components/common/info-block";
+@import "components/common/factors-card";
+@import "components/common/steps-list";
+@import "components/common/equipment-sliders";

@@ -1,0 +1,54 @@
+.breadcrumbs-section{
+	padding: 20px 0 45px;
+}
+
+.breadcrumbs{
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	width: 100%;
+	font-family: $second-font;
+
+	li{
+		font-size: 12px;
+		line-height: 20px;
+		color: #717171;
+		display: flex;
+		align-items: center;
+
+		&:after{
+			content: "/";
+			display: block;
+			margin: 0 10px;
+		}
+
+		&:last-child{
+			&:after{
+				display: none;
+			}
+		}
+
+		a{
+			color: #717171;
+			text-decoration: underline;
+
+			&:hover{
+				color: $primary;
+			}
+		}
+	}
+
+	&.light{
+		li{
+			color: #fff;
+
+			a{
+				color: #fff;
+
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+	}
+}

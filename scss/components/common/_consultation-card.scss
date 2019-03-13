@@ -1,0 +1,68 @@
+.consultation-card{
+	padding: 30px 25px 45px;
+	border: 1px solid #dedede;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.card-icon{
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 25px;
+		border: 2px solid $primary;
+
+		i{
+			display: block;
+		}
+	}
+
+	.card-caption{
+		margin-bottom: 5px;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $text-dark;
+		text-align: center;
+		font-family: $main-font;
+	}
+
+	.card-subcaption{
+		font-family: $second-font;
+		font-size: 14px;
+		line-height: 24px;
+		font-style: italic;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+
+	.card-text{
+		font-family: $second-font;
+		font-size: 16px;
+		line-height: 1.5;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.card-phone{
+		margin-bottom: 40px;
+	}
+
+	.card-buttons{
+		.btn{
+			margin-bottom: 20px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		.card-text{
+			max-width: 330px;
+		}
+	}
+}
