@@ -14,6 +14,7 @@
 		</div>
 		<div class="inner-page-wrapper">
 			<section class="map-section map-2-points">
+				<div class="map"></div>
 				<div class="container">
 					<div class="contacts-card">
 						<h4 class="card-caption">Контакты</h4>

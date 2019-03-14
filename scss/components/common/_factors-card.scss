@@ -21,6 +21,12 @@
 		line-height: 1.5;
 		font-family: $second-font;
 	}
+
+	@media screen and (max-width: 575px){
+		padding: 25px 15px;
+		border: 1px solid #dedede;
+		border-bottom: 0;
+	}
 }
 
 .factors-list{
@@ -68,6 +74,13 @@
 	@media screen and (max-width: 575px){
 		> .item{
 			flex-basis: 100%;
+			margin-bottom: 0;
+
+			&:last-child{
+				.factors-card{
+					border: 1px solid #dedede;
+				}
+			}
 		}
 	}
 }

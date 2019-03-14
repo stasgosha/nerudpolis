@@ -13,9 +13,9 @@
 			</div>
 		</div>
 		<div class="inner-page-wrapper">
-			<section class="materials-section section-default-bottom-padding">
+			<section class="materials-section section-default-bottom-padding sm-small-bottom-padding">
 				<div class="container">
-					<div class="cards-list columns-4 md-columns-2 xs-columns-1">
+					<div class="cards-list columns-4 md-columns-2 xs-columns-1 d-none d-md-flex">
 						<div class="item">
 							<div class="material-card">
 								<div class="card-circle">
@@ -69,6 +69,12 @@
 							</div>
 						</div>
 					</div>
+					<ul class="tabs-nav wrap d-md-none">
+						<li><a href="product.php">Карьерный</a></li>
+						<li><a href="product.php">Мытый</a></li>
+						<li><a href="product.php">Речной</a></li>
+						<li><a href="product.php">Сеяный</a></li>
+					</ul>
 				</div>
 			</section>
 			<section class="prices-section section-default-bottom-padding">

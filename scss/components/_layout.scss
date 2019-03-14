@@ -77,8 +77,21 @@ li{
 	padding: $section-padding 0;
 }
 
+@media screen and (max-width: 767px){
+	.sm-small-bottom-padding{
+		padding-bottom: 30px;
+	}
+}
+
 @media screen and (max-width: 991px){
 	.scrollable-container{
+		&:before{
+			content: 'Для просмотра таблицы сдвиньте вправо →';
+			font-weight: 400;
+			margin-bottom: 10px;
+			display: inline-block;
+		}
+
 		.scrollable-container-inner{
 			width: 100%;
 			overflow: auto;

@@ -35,6 +35,7 @@
 										</div>
 										<div class="slide-content">
 											<div class="slide-text tpg-typography">
+												<div class="card-name">Scania - Экскаватор</div>
 												<p>Космологическая сингулярность является одним из примеров гравитационных сингулярностей, предсказываемых общей теорией относительности и некоторыми другими теориями гравитации попытки решения проблемы существования этой сингулярности.</p>
 											</div>
 											<div class="slide-price">
@@ -49,6 +50,7 @@
 										</div>
 										<div class="slide-content">
 											<div class="slide-text tpg-typography">
+												<div class="card-name">MAN - Экскаватор</div>
 												<p>Космологическая сингулярность является одним из примеров гравитационных сингулярностей, предсказываемых общей теорией относительности и некоторыми другими теориями гравитации попытки решения проблемы существования этой сингулярности.</p>
 											</div>
 											<div class="slide-price">
@@ -63,6 +65,7 @@
 										</div>
 										<div class="slide-content">
 											<div class="slide-text tpg-typography">
+												<div class="card-name">Камаз - Экскаватор</div>
 												<p>Космологическая сингулярность является одним из примеров гравитационных сингулярностей, предсказываемых общей теорией относительности и некоторыми другими теориями гравитации попытки решения проблемы существования этой сингулярности.</p>
 											</div>
 											<div class="slide-price">
@@ -77,6 +80,7 @@
 										</div>
 										<div class="slide-content">
 											<div class="slide-text tpg-typography">
+												<div class="card-name">Track - Экскаватор</div>
 												<p>Космологическая сингулярность является одним из примеров гравитационных сингулярностей, предсказываемых общей теорией относительности и некоторыми другими теориями гравитации попытки решения проблемы существования этой сингулярности.</p>
 											</div>
 											<div class="slide-price">
@@ -91,6 +95,7 @@
 										</div>
 										<div class="slide-content">
 											<div class="slide-text tpg-typography">
+												<div class="card-name">KMR - Экскаватор</div>
 												<p>Космологическая сингулярность является одним из примеров гравитационных сингулярностей, предсказываемых общей теорией относительности и некоторыми другими теориями гравитации попытки решения проблемы существования этой сингулярности.</p>
 											</div>
 											<div class="slide-price">
@@ -105,6 +110,7 @@
 										</div>
 										<div class="slide-content">
 											<div class="slide-text tpg-typography">
+												<div class="card-name">Ивановец- Экскаватор</div>
 												<p>Космологическая сингулярность является одним из примеров гравитационных сингулярностей, предсказываемых общей теорией относительности и некоторыми другими теориями гравитации попытки решения проблемы существования этой сингулярности.</p>
 											</div>
 											<div class="slide-price">
@@ -114,7 +120,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="slider-legend"">
+								<div class="slider-legend">
 									<div class="item" data-slide="1">Scania - Экскаватор</div>
 									<div class="item" data-slide="2">MAN - Экскаватор</div>
 									<div class="item" data-slide="3">Камаз - Экскаватор</div>
@@ -199,11 +205,9 @@
 					</div>
 				</div>
 			</section>
-			<?php include('page-parts/factors-section.inc.php'); ?>
 			<?php include('page-parts/order-steps-section.inc.php'); ?>
 			<?php include('page-parts/order-section.inc.php'); ?>
 			<?php include('page-parts/reviews-section-light.inc.php'); ?>
-			<?php include('page-parts/car-park-section.inc.php'); ?>
 			<section class="text-section section-default-bottom-padding">
 				<div class="container">
 					<div class="section-caption">

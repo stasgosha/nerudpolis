@@ -30,6 +30,17 @@
 				justify-content: space-between;
 				padding-bottom: 35px;
 
+				.card-name{
+					// display: none;
+					font-size: 16px;
+					line-height: 24px;
+					margin-top: 15px;
+					text-align: center;
+					color: $text-dark;
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+
 				.slide-text{
 					max-width: 480px;
 					line-height: 1.5;
@@ -209,6 +220,13 @@
 			.slide{
 				.slide-image{
 					height: 438px;
+				}
+
+				.slide-content{
+					.card-name{
+						display: block;
+						margin-bottom: 15px;
+					}
 				}
 			}
 

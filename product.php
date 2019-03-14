@@ -76,6 +76,9 @@
 			</section>
 			<?php include('page-parts/factors-section.inc.php'); ?>
 			<?php include('page-parts/order-steps-section.inc.php'); ?>
+			<div class="d-md-none">
+				<?php include('page-parts/how-we-are-work-section.inc.php'); ?>
+			</div>
 			<?php include('page-parts/order-section.inc.php'); ?>
 			<?php include('page-parts/reviews-section-light.inc.php'); ?>
 			<?php include('page-parts/car-park-section.inc.php'); ?>
@@ -99,7 +102,9 @@
 					</div>
 				</div>
 			</section>
-			<?php include('page-parts/how-we-are-work-section.inc.php'); ?>
+			<div class="d-none d-md-block">
+				<?php include('page-parts/how-we-are-work-section.inc.php'); ?>
+			</div>
 			<?php include('page-parts/our-clients-section.inc.php'); ?>
 		</div>
 	</div>

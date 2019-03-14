@@ -82,7 +82,7 @@ $(document).ready(function(){
 	});
 
 	$('.slider-legend .item').click(function(){
-		$(this).parent().siblings('.equipment-slider').slick('slickGoTo', $(this).data('slide'));
+		$(this).parent().siblings('.equipment-slider').slick('slickGoTo', $(this).data('slide') - 1);
 		$(this).addClass('current').siblings().removeClass('current');
 	});
 

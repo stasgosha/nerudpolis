@@ -32,6 +32,25 @@
 		&:hover{
 			color: $primary;
 		}
+
+		a{
+			color: $text-dark;
+		}
+
+		&.current-menu-item,
+		&.current-menu-parent{
+			border-bottom-color: $primary;
+
+			a{
+				color: $primary;
+			}
+		}
+		
+		&.current-menu-item{
+			a{
+				cursor: default;
+			}
+		}
 	}
 
 	&.wrap{

@@ -115,7 +115,7 @@
 									<p>от <span>635</span> руб</p>
 								</div>
 							</div>
-							<a href="category.php" class="card-name">Аренда спецтехники</a>
+							<a href="rent.php" class="card-name">Аренда спецтехники</a>
 						</div>
 					</div>
 				</div>
@@ -128,6 +128,7 @@
 		<?php include('page-parts/how-we-are-work-section.inc.php'); ?>
 		<?php include('page-parts/our-clients-section.inc.php'); ?>
 		<section class="map-section">
+			<div class="map"></div>
 			<div class="container">
 				<div class="contacts-card">
 					<h4 class="card-caption">Контакты</h4>
