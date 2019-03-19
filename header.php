@@ -66,6 +66,29 @@
 						</div>
 					</div>
 				</div>
+				<div class="sticky-line">
+					<div class="container">
+						<div class="header-inner">
+							<div class="header-block">
+								<a href="index.php" class="logo-block">
+									<div class="block-image">
+										<img src="img/logo.png" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="header-block">
+								<div class="sl-contacts">
+									<div class="item">
+										<a href="mailto:mail@nerudpolis.ru">mail@nerudpolis.ru</a>
+									</div>
+									<div class="item">
+										<a href="tel:+84957638102" class="phone-link">8 (495) <span>763-81-02</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="top-nav-line d-none d-md-block">
 					<div class="container">
 						<ul class="top-nav">
